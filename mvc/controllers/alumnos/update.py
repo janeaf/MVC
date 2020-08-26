@@ -1,7 +1,7 @@
 import web
-
+import mvc.models.model as alumnos
 render = web.template.render("mvc/views/alumnos/", base="template")
-
+model_alumnos = alumnos.Alumnos()
 class Update():
 
     def GET(self):
