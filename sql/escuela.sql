@@ -17,5 +17,5 @@ CREATE TABLE alumnos(
 
 INSERT INTO alumnos(Nombre, lastname, lastname2, Matricula, Edad, Fecha, Sexo, Estado)
 values
-('Julissa', 'Dominguez', 'Badillo', '1718110384', '20', '2000/04/05', 'Femenino', 'Soltera'),
-('Andrea', 'Juarez', 'Munguia', '1718110394', '20', '2000/06/16', 'Femenino', 'Soltera');
+('Janeth', 'Atenco', 'Franco', '1718110376', '22', '1998/03/24', 'Femenino', 'Soltera'),
+('Fatima', 'Perez', 'Cruz', '1718110402', '20', '2000/02/17', 'Femenino', 'Soltera');
