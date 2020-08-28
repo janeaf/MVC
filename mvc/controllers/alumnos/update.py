@@ -4,7 +4,7 @@ render = web.template.render("mvc/views/alumnos/", base="template")
 model_alumnos = alumnos.Alumnos()
 class Update():
 
-    def GET(self):
+    def GET(self, Matricula):
         try:
             
          result = model_alumnos.view(Matricula)[0]
