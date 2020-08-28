@@ -11,6 +11,6 @@ class View():
     def GET(self, Matricula):
         try:
             result = model_alumnos.view(Matricula)[0]
-            return render.view(result) # renderizando formulario.html
+            return render.view(result) 
         except Exception as e:
             return "Error " + str(e.args)
