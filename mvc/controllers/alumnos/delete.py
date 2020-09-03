@@ -6,7 +6,7 @@ render = web.template.render("mvc/views/alumnos/", base="template")
 class Delete():
     def GET(self, Matricula ):
         try:
-            result = model_alumnos.view(matricula)[0]
+            result = model_alumnos.view(Matricula)[0]
             return render.delete() 
         except Exception as e:
             return "Error " + str(e.args)
