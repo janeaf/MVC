@@ -16,15 +16,15 @@ class Update():
     def POST(self, Matricula):
         try:
             form = web.input()
-            matricula = form.Matricula
-            nombre = form.Nombre
-            apellido_paterno = form.lastname
-            apellido_materno = form.lastname2
-            edad = form.Edad
-            fecha_nacimiento = form.Fecha
-            sexo = form.Sexo
-            estado_civil = form.Estado
-            result = model_alumnos.update(Nombre, lastname, lastname, Matricula, Edad, Fecha, Sexo, Estado)
+            Matricula = form.Matricula
+            Nombre = form.Nombre
+            lastname = form.lastname
+            lastname2 = form.lastname2
+            Edad = form.Edad
+            Fecha = form.Fecha
+            Sexo = form.Sexo
+            Estado = form.Estado
+            result = model_alumnos.update(Nombre, lastname, lastname2, Matricula, Edad, Fecha, Sexo, Estado)
             web.seeother('/list')
         except Exception as e:
             return "Error " + str(e.args)
